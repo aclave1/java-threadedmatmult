@@ -1,3 +1,11 @@
+/***
+ * Clavelle, Alex
+ * PA-1a(Multithreading)
+ * Matrix.java
+ * cs4103-sp15
+ * cs410310
+ * */
+
 import java.util.Random;
 
 public class Matrix {

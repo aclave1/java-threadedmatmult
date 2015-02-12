@@ -1,3 +1,11 @@
+/***
+ * Clavelle, Alex
+ * PA-1a(Multithreading)
+ * MatMult.java
+ * cs4103-sp15
+ * cs410310
+ * */
+
 public class MatMult implements Runnable{
 
     private Matrix _a;
@@ -20,7 +28,7 @@ public class MatMult implements Runnable{
         int sum = 0;
         //we can just assume they're all the same length, and that the rows and columns match up since we check in the matrix constructor
         for(int i=0;i<_a.elements[0].length;i++){
-            sum += _a.elements[_row][i] * _b.elements[_col][i];
+            sum += _a.elements[_row][i] * _b.elements[i][_col];
         }
         _result.elements[_row][_col] = sum;
     }
